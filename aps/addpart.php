@@ -160,20 +160,20 @@
 				</div>
 				
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="psubcatid">Subcategory:</label>
+					<label class="control-label col-sm-2" for="psubcatid">Part Subcategory:</label>
 					<div class="col-sm-10">
 						<select class="form-control" id="psubcatid" name="psubcatid" required>
-							<option value="">Sub Category</option>
+							<option value="">Part Subcategory</option>
 							<option class="ng-cloak" ng-repeat="a in cats" value={{a.SubCat}}>{{a.SubCat}}</option>
 						</select>
 					</div>
 				</div> 
 				
 				<div class="form-group">
-					<label class="control-label col-sm-2" for="pwarrantyid">Warranty:</label>
+					<label class="control-label col-sm-2" for="pwarrantyid">Part Warranty:</label>
 					<div class="col-sm-10">
 						<select class="form-control" id="pwarrantyid" name="pwarrantyid" required> 
-							<option value="">Warranty</option>
+							<option value="">Part Warranty</option>
 							<option class="ng-cloak" ng-repeat="a in warrn" value={{a.WarrantyID}}>{{a.Type}}</option>
 						</select>
 					</div>

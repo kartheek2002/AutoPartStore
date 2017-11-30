@@ -134,17 +134,17 @@
 								<span class="glyphicon sort-icon" ng-show="sortKey=='PCompany'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
 							<th ng-click="sort('Price')">Price
 								<span class="glyphicon sort-icon" ng-show="sortKey=='Price'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
-							<th ng-click="sort('SubCatID')">Sub Category
+							<th ng-click="sort('SubCatID')">Subcategory
 								<span class="glyphicon sort-icon" ng-show="sortKey=='SubCatID'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
 							<th ng-click="sort('WarrantyID')">Warranty
 								<span class="glyphicon sort-icon" ng-show="sortKey=='WarrantyID'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
 							<th ng-click="sort('Quantity')">Quantity
 								<span class="glyphicon sort-icon" ng-show="sortKey=='Quantity'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
-							<th>Add To Cart</th>
+							<th>Add to Cart</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr dir-paginate="x in names|orderBy:sortKey:reverse|itemsPerPage:5" class="ng-cloak" emit-last-repeater-element>
+						<tr dir-paginate="x in names|orderBy:sortKey:reverse|itemsPerPage:4" class="ng-cloak" emit-last-repeater-element>
 							<td align="left" style="vertical-align: middle;">{{ x.PartNo}}</td>
 							<td align="center" style="vertical-align: middle;"><img ng-src='img/{{ x.PImage}}' alt='{{ x.Pname }}' height="100" width="100"></img></td>
 							<td align="left" style="vertical-align: middle;">{{ x.PCompany }} {{ x.Pname }}</td>
@@ -160,7 +160,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
+				<div class="col-md-5 col-md-offset-4">
 					<dir-pagination-controls max-size="10" direction-links="true" boundary-links="true"></dir-pagination-controls>
 				</div>
 			</div>

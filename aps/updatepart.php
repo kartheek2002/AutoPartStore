@@ -151,34 +151,34 @@
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="psubcat">Part Sub Category:</label>
+						<label class="control-label col-sm-2" for="psubcat">Current Subcategory:</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="psubcat" name="psubcat" placeholder="Part Sub Category" value={{part.SubCatID}} readonly />
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="psubcatid">Subcategory:</label>
+						<label class="control-label col-sm-2" for="psubcatid">Part Subcategory:</label>
 						<div class="col-sm-10">
 							<select class="form-control" id="psubcatid" name="psubcatid">
-								<option value="">Sub Category</option>
+								<option value="">Part Subcategory</option>
 								<option class="ng-cloak" ng-repeat="a in cats" value={{a.SubCat}}>{{a.SubCat}}</option>
 							</select>
 						</div>
 					</div> 
 					
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="pwarranty">Part Warranty:</label>
+						<label class="control-label col-sm-2" for="pwarranty">Current Warranty:</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="pwarranty" name="pwarranty" placeholder="Part Warranty" value={{part.WarrantyID}} readonly />
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="pwarrantyid">Warranty:</label>
+						<label class="control-label col-sm-2" for="pwarrantyid">Part Warranty:</label>
 						<div class="col-sm-10">
 							<select class="form-control" id="pwarrantyid" name="pwarrantyid"> 
-								<option value="">Warranty</option>
+								<option value="">Part Warranty</option>
 								<option class="ng-cloak" ng-repeat="a in warrn" value={{a.WarrantyID}}>{{a.Type}}</option>
 							</select>
 						</div>
